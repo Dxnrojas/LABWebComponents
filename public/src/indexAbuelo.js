@@ -1,7 +1,10 @@
+import  header  from "./components/header/header.js";
+
 class AppContainer extends HTMLElement {
 
     constructor(){
-
+        super();
+        this.attachShadow({mode: "open"});
     }
     connectedCallBack(){
         this.render()
@@ -17,6 +20,8 @@ class AppContainer extends HTMLElement {
         <section>
         </section>
         <news></news>
+        <smallBanner></smallBanner>
+        <community></community>
         
         `
     }

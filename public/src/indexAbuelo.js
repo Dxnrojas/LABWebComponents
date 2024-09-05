@@ -1,4 +1,4 @@
-import  header  from "./components/header/header.js";
+import  "./components/header/header.js";
 
 class AppContainer extends HTMLElement {
 
@@ -6,15 +6,15 @@ class AppContainer extends HTMLElement {
         super();
         this.attachShadow({mode: "open"});
     }
-    connectedCallBack(){
+    connectedCallback(){
         this.render()
-
     }
 
     render(){
         this.shadowRoot.innerHTML = `
         <my-header></my-header>
         <section>
+            
         </section>
         <h2>ULTIMAS NOTICIAS Y ARTICULOS</h2>
         <section>

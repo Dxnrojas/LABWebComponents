@@ -31,8 +31,8 @@ class Header extends HTMLElement {
             </nav>
         
             <div class="header-btns">
-            <my-button label="REGISTRARSE" type="primary-sml"></my-button>
-            <my-button label="INICIAR SESIÓN" type="tertiary-sml"></my-button>
+            <my-button label="REGISTRARSE" type="primary-small"></my-button>
+            <my-button label="INICIAR SESIÓN" type="tertiary-small"></my-button>
             </div>
         </div>
         </header>`

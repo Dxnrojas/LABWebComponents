@@ -38,7 +38,7 @@
 
 }
 
-.primary-sml {
+.primary-small {
     padding: 7px 15px 5px;
     border-radius: 24px;
     border: 1px solid #0768af;
@@ -46,11 +46,11 @@
     background: rgba(7, 104, 175, 0.5);
 }
 
-.primary-sml:hover {
+.primary-small:hover {
     border: 1px solid #0093fc;
 }
 
-.tertiary-sml {
+.tertiary-small {
     color: #B3B6B7;
     font-weight: normal;
     padding: 7px 15px 5px;

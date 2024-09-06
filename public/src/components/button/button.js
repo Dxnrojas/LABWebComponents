@@ -9,8 +9,8 @@ class Button extends HTMLElement {
     }
 
     render() {
-        const label = this.getAttribute('label') || 'Label'
-        const type = this.getAttribute('type')
+        const label = this.getAttribute('label') //Se realiza para que pueda leer lo que tiene el boton
+        const type = this.getAttribute('type')//Se realiza para especificar el tipo de boton
         const className = `button ${type}`
 
         this.shadowRoot.innerHTML = `

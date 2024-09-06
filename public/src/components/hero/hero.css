@@ -1,0 +1,39 @@
+.hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100dvh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.hero-info{
+    width: 100%;
+    max-width: 580px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 200px auto 200px 60px;
+}
+
+.hero-info img {
+    height: 150px;
+    margin: 0 0 15px;
+}
+
+.caption {
+    font-size: 1.5rem;
+    color: #ffff;
+    font-weight: 800;
+    text-align: center;
+    margin: 0 0 25px;
+}
+
+.hero-actions {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}

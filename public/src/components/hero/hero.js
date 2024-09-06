@@ -1,7 +1,7 @@
 class Hero extends HTMLElement {
 
     static get observedAttributes(){
-        return ['img', 'alt', 'logo', 'description', 'button00', 'button01'];
+        return ['img', 'logo', 'description', 'button00', 'button01'];
     }
 
     constructor () {
@@ -13,15 +13,22 @@ class Hero extends HTMLElement {
     this.render();
     }
 
-    attributeChangedCallback (attrName, oldVal, newVal) {
-    this.render();
+    attributeChangedCallback (propName, oldVal, newVal) {
+        if (oldVal !== newVal) {
+            this[propName] = newVal
+        };
 
     }
     render(){
         this.shadowRoot.innerHTML = `
         <section>
         <img src="${this.img}" alt="${this.alt}">
-        
+        <div>
+            <img src="${this.logo}">
+            <p>${this.description}</p>
+            <button>${this.button00}</button>
+            <button>${this.button01}</button>
+        </div>
         </section>
         `
 

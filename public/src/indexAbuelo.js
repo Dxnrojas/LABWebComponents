@@ -15,6 +15,18 @@ class AppContainer extends HTMLElement {
         this.shadowRoot.innerHTML = `
         <my-header></my-header>
         <my-hero></my-hero>
+
+        <section class="notices-logos">
+        <my-logos
+          title="ÚLTIMAS NOTICIAS Y ARTÍCULOS"
+          img="./src/assets/NOTICES.png"
+          img1="./src/assets/ACTIVISION.png"
+          img2="./src/assets/COD.png"
+          img3="./src/assets/TONY.png"
+          img4="./src/assets/CRASH.png"
+        ></my-logos>
+      </section>
+
        
         `
     }

@@ -27,7 +27,9 @@ class SmallBanner extends HTMLElement {
             <div class='small-banner'>
                 <div class='smallBanner-txt'>
                     <h1>${this.title}</h1>
+                    <br></br>
                     <p>${this.description}</p>
+                    <br></br>
              <my-button label="VISIT SUPPORT" type="secondary"></my-button>
                 </div>
                 <div class='smallBanner-img'>

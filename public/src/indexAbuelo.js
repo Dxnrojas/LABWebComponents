@@ -58,9 +58,11 @@ class AppContainer extends HTMLElement {
             bigImg="https://www.callofduty.com/content/dam/atvi/callofduty/cod-touchui/blog/hero/codm/CODM-S7-ETERNAL-GHOST-TOUT.jpg" 
             description="Presentamos la Temporada 7 de Call of Duty: Mobile - Ghost eterno"
         ></my-card>
-
-        <my-button label="VER TODO" type="secondary"></my-button>
           
+    </section>
+
+    <section>
+     <my-button class="centered-button" label="VER TODO" type="secondary"></my-button>
     </section>
 
     <small-banner

@@ -1,7 +1,7 @@
 class Card extends HTMLElement {
 
     static get observedAttributes() {
-        return ['bigImg', 'description'];
+        return ['bigImg', 'description', 'title'];
     }
 
 
@@ -13,9 +13,9 @@ class Card extends HTMLElement {
         this.render()
     }
 
-    attributeChangedCallback(propName, oldVal, newVal) {
-        if (oldVal !== newVal) {
-            this.render()
+    attributeChangedCallback(propName, oldValue, newValue) {
+        if (oldValue !== newValue) {
+            this[propName] = newValue
         }
     }
 

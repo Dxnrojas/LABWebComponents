@@ -7,18 +7,11 @@ class Hero extends HTMLElement {
         this.attachShadow({ mode: 'open' });
     }
 
-    // static get observedAttributes(){
-    //     return ['img', 'alt', 'logo', 'description', 'button00', 'button01'];
-    // }
-
 
     connectedCallback() {
         this.render();
     }
 
-    // attributeChangedCallback (attrName, oldVal, newVal) {
-    // this.render();
-    // }
 
     render() {
 
